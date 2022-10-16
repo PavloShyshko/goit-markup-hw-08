@@ -1,0 +1,121 @@
+.button-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio {
+  &-btn {
+    padding: 6px 22px;
+    background-color: var(--portfolio-btn-color);
+    color: var(--secondary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-background-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &-link{
+    display: block;
+    text-decoration: none;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .box-text,
+    &:focus .box-text{
+      transform: translateY(0%);
+    }
+
+
+  }
+
+  &-description{
+    padding: 20px 24px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #eeeeee;
+  
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+  
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #eeeeee;
+  }
+
+  &-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+  }
+
+  &-text{
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+
+  &-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+}
+
+.box-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--primary-background-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
