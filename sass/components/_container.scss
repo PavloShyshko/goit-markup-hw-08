@@ -1,5 +1,4 @@
 .container {
-    // display: flex;
     width: 480px;
     margin: 0 auto;
     padding-left: 15px;
@@ -7,12 +6,9 @@
 
     @media screen and (min-width:768px) {
         width: 738px;
-        
-    }
+         }
 
     @media screen and (min-width:1600px) {
-        width: 1170px;
-    }
-
-    
-  }
+        width: 1200px;
+         }
+}

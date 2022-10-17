@@ -45,12 +45,12 @@
               </a>
             </li>
           </ul>
+          <button  type="button" class="menu-toggle__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="mobile-button__open">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
         </nav>
-        <button  type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg>
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-        </button>
       </div>
     </header>
     <!--main content-->
@@ -59,19 +59,19 @@
       <!--mobile menu-->
 
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle__close js-close-menu">
           <svg class="mobile-button__close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <ul class="mobile-menu list">
-          <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студія</a></li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link--curent">Студія</a></li>
           <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
           <li class="mobile-menu__item"><a href="#Контакти" class="mobile-menu__link">Контакти</a></li>
         </ul>
         <ul class="mobile-contacts list">
-          <li clas="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">+38096 111 11 11</a></li>
-          <li clas="mobile-contacts__item"><a href="mailto:info@devstudio" class="mobile-contacts__link">info@devstudio</a></li>
+          <li clas="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link--blue">+38096 111 11 11</a></li>
+          <li clas="mobile-contacts__item"><a href="mailto:info@devstudio" class="mobile-contacts__link">info@devstudio.com</a></li>
         </ul>
         <ul class="mobile-social list">
           <li class="mobile-social__item">

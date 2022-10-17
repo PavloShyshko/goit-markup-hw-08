@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav__list {
+    display: none;
+  }
+} 
+
 /*contact-list block*/
 
 .contact-list {
@@ -100,3 +106,9 @@
     fill: currentColor;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
+} 
