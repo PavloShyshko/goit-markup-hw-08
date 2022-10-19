@@ -1,7 +1,8 @@
 .hero {
   &-section {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 100%;
+    // max-width: 1600px;
+    min-height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
