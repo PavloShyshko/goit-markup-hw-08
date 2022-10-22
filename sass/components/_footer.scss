@@ -2,6 +2,8 @@
   padding: 60px 0px;
   display: flex;
   background-color: var(--secondary-background-color);
+  margin: 0;
+  justify-content: center;
 
   &-container {
     display: flex;
@@ -224,4 +226,42 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 1200px){
+  .footer-box{
+    width: 231px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .footer-social{
+    margin-left: 70px;
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .form-wrap{
+   min-width: 570px;
+   margin-left: 93px;
+   margin-right: 0;
+   text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .footer-form{
+   display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .footer-input{
+   width: 358px;
+   margin-right: 12px;
+  }
+}
+
+
 

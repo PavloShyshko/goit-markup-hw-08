@@ -15,17 +15,15 @@
     border-radius: 0px 0px 4px 4px;
     max-width: 450px;
     height: auto;
-    // &:not(:last-child){
-    //   // margin-right: 30px;
-    // }
   }
 
   &__foto{
+    width: 100%;
     display: block;
   }
 
   &__wrap{
-    width: 270px;
+    max-width: 450px;
     padding: 30px 10px;
     text-align: center;
   }
